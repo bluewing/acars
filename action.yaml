@@ -2,9 +2,9 @@ name: ACARS
 author: Bluewing
 description: Reporting and notification system for CI/CD
 branding:
-    color: gray-dark
-    icon: phone-call
+  color: gray-dark
+  icon: phone-call
 
 runs:
-    using: docker
-    image: Dockerfile
+  using: docker
+  image: docker://ghcr.io/bluewing/acars:latest

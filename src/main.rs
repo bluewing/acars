@@ -41,6 +41,7 @@ fn configure_webhook_body() -> String {
 ///
 ///
 fn send_webhook_event(webhook_url: &str, mut payload_as_bytes: String) {
+    println!("Sending to {}", webhook_url);
     let mut curl = curl::easy::Easy::new();
     curl.url(webhook_url).unwrap();
     curl.post(true).unwrap();

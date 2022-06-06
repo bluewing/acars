@@ -15,7 +15,7 @@ repository = "https://github.com/bluewing/acars"
 maintenance = { status = "passively maintained" }
 
 [dependencies]
-curl = "0.4.43"
+curl = { version = "0.4.43", features = ["rustls", "static-curl"] }
 structopt = "0.3.26"
 serde = { version = "1.0.137", features = ["derive"] }
 serde_json = "1.0.81"
